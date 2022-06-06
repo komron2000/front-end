@@ -1,0 +1,58 @@
+body {
+  height: 0;
+  top: 0;
+}
+.item {
+  background-color: #2196f3;
+  display: flex;
+  text-decoration: none;
+  height: 7vh;
+}
+.header__logo {
+  padding: 10px;
+  font-family: 'Roboto';
+  color: #fff;
+}
+.active {
+  padding-left: 50px;
+}
+.hover-effect-scale {
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+.hover-effect-scale li {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0;
+  border: 5px solid #fff;
+  box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.hover-effect-scale li > div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hover-effect-scale li:hover > div {
+  position: absolute;
+  overflow: hidden;
+  top: 70%;
+  left: 70%;
+}
+.hover-effect-scale li div {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  color: black;
+}
+.hover-effect-scale li:hover img {
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+}
+.hover-effect-scale li:hover div {
+  opacity: 2;
+}
